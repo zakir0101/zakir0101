@@ -1,108 +1,79 @@
-# Deployment Guide
+# Deployment Guide for Zakir's Portfolio
 
-## Quick Deployment Options
+## GitHub Pages Deployment
 
-### 1. GitHub Pages (Free & Easy)
-```bash
-# 1. Create new repository named: zakir0101.github.io
-# 2. Upload all files to the repository
-# 3. Go to Settings → Pages → Select 'main' branch
-# 4. Your site will be live at: https://zakir0101.github.io
+This portfolio is configured for deployment to the `zakir0101/zakir0101` repository on GitHub Pages.
+
+### Deployment Steps
+
+1. **Upload to GitHub**
+   - Navigate to your repository: `zakir0101/zakir0101`
+   - Upload all portfolio files to the repository root or a dedicated folder
+
+2. **Configure GitHub Pages**
+   - Go to repository **Settings → Pages**
+   - Under **Source**, select **main branch** (or the branch containing your files)
+   - If files are in a subfolder, select the appropriate folder
+   - Click **Save**
+
+3. **Wait for Deployment**
+   - GitHub will build and deploy your site automatically
+   - Deployment typically completes within 1-2 minutes
+
+4. **Access Your Live Portfolio**
+   - **Primary URL**: `https://zakir0101.github.io/zakir0101/`
+   - **Alternative User Page**: `https://zakir0101.github.io` (if using `zakir0101.github.io` repository)
+
+## SEO Configuration
+
+Add these meta tags to `index.html` for better search engine visibility:
+
+```html
+<!-- SEO Meta Tags -->
+<meta name="description" content="Zakir - Full Stack Developer & AI/OCR Specialist specializing in document intelligence, OCR systems, PDF processing, and AI integration for educational technology.">
+<meta name="keywords" content="OCR, PDF processing, AI integration, document intelligence, synthetic data, DeepSeek OCR, Gemini API, Python, Flask, React, educational technology">
+<meta name="author" content="Zakir">
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Zakir - Full Stack Developer & AI/OCR Specialist">
+<meta property="og:description" content="Portfolio showcasing advanced document intelligence projects, OCR systems, and AI integration for educational technology">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zakir0101.github.io/zakir0101/">
 ```
 
-### 2. Netlify (Free & Fast)
-1. Go to [netlify.com](https://netlify.com)
-2. Drag and drop the `portfolio-website` folder
-3. Your site will be deployed instantly
-4. Custom domain can be added
+## Custom Domain (Optional)
 
-### 3. Vercel (Free & Modern)
-1. Go to [vercel.com](https://vercel.com)
-2. Connect your GitHub repository
-3. Automatic deployments on every push
-4. Custom domain support
+To use a custom domain like `zakir.dev`:
 
-## Custom Domain Setup
+1. **Create CNAME file** in repository root:
+   ```
+   zakir.dev
+   ```
 
-### For GitHub Pages:
-1. Buy a domain (e.g., zakir.dev)
-2. Create a `CNAME` file with your domain
-3. Update DNS settings:
+2. **Update DNS settings** with your domain provider:
    ```
    Type: CNAME
    Name: www
    Value: zakir0101.github.io
    ```
 
-### For Netlify/Vercel:
-1. Add custom domain in dashboard
-2. Update DNS settings as instructed
+3. **Wait for DNS propagation** (up to 48 hours)
 
-## SEO Optimization
+## Performance Optimization
 
-### Add to `index.html` head section:
-```html
-<!-- SEO Meta Tags -->
-<meta name="description" content="Zakir - Full Stack Developer specializing in web applications, mobile apps, and AI integration. View my portfolio and projects.">
-<meta name="keywords" content="full stack developer, web development, mobile apps, AI, JavaScript, Python, Java, Vue.js">
-<meta name="author" content="Zakir">
-
-<!-- Open Graph Tags -->
-<meta property="og:title" content="Zakir - Full Stack Developer">
-<meta property="og:description" content="Portfolio showcasing web and mobile development projects">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://zakir0101.github.io">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Zakir - Full Stack Developer">
-<meta name="twitter:description" content="Portfolio showcasing web and mobile development projects">
-```
-
-## Analytics Setup
-
-### Google Analytics (Optional)
-```html
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
-</script>
-```
-
-## Performance Tips
-
-1. **Optimize Images**: Use WebP format when possible
-2. **Minify Assets**: Use tools to minify CSS/JS
-3. **Enable Compression**: Gzip compression on server
-4. **Use CDN**: Serve assets via CDN
-5. **Lazy Load**: Images load as needed
-
-## Security Headers
-
-Add to your server configuration:
-```
-Content-Security-Policy: default-src 'self'
-X-Frame-Options: DENY
-X-Content-Type-Options: nosniff
-Strict-Transport-Security: max-age=31536000
-```
-
-## Monitoring
-
-- **Uptime Monitoring**: UptimeRobot, Pingdom
-- **Performance**: Google PageSpeed Insights
-- **SEO**: Google Search Console
+- **Images**: Use WebP format for better compression
+- **Assets**: Minify CSS/JS files before deployment
+- **Caching**: GitHub Pages automatically enables Gzip compression
+- **Monitoring**: Use Google PageSpeed Insights for performance analysis
 
 ## Backup Strategy
 
-1. **GitHub**: All code is version controlled
-2. **Local Backup**: Regular backups of custom content
-3. **Database**: If using dynamic content, regular exports
+- **GitHub**: All code is version controlled in the repository
+- **Local**: Keep a local backup of any custom configurations
+- **Regular Updates**: Commit changes regularly to maintain version history
 
 ---
 
-Your portfolio is now ready to showcase your skills to the world! 🚀
+**Live Portfolio**: [https://zakir0101.github.io/zakir0101/](https://zakir0101.github.io/zakir0101/)
+
+*Last Updated: December 2025*
