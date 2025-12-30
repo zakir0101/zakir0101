@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakir - Full Stack Developer & AI/OCR Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">zakir0101</a>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Zakir</span>
+                </h1>
+                <h2 class="hero-subtitle">Full Stack Developer & AI/OCR Specialist</h2>
+                <p class="hero-description">
+                    I build intelligent document processing systems and AI-powered applications.
+                    Specializing in OCR, PDF parsing, and synthetic data generation for educational technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="code-animation">
+                <div class="code-line">// Building the future, one line at a time</div>
+                <div class="code-line">const passion = new Passion('coding');</div>
+                <div class="code-line">passion.learn().build().innovate();</div>
+                <div class="code-line">while(alive) { code(); }</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Intelligence Expertise Section -->
+    <section id="document-intelligence" class="document-intelligence">
+        <div class="container">
+            <h2 class="section-title">Document Intelligence Expertise</h2>
+            <p class="section-subtitle">Specializing in OCR, PDF processing, and synthetic data generation for educational technology and document automation</p>
+
+            <div class="expertise-container">
+                <div class="expertise-overview">
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>OCR & Text Recognition</h3>
+                        <p>Advanced optical character recognition systems using multiple backends (DeepSeek OCR, Mathpix, Gemini) with GPU acceleration and intelligent routing.</p>
+                        <ul class="tech-list">
+                            <li>DeepSeek OCR fine-tuning</li>
+                            <li>Multi-backend orchestration</li>
+                            <li>Handwritten text recognition</li>
+                            <li>Mathematical equation parsing</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>PDF Processing Engine</h3>
+                        <p>Custom PDF parsing and rendering engine built from scratch with Cairo graphics, FreeType fonts, and hierarchical document structure analysis.</p>
+                        <ul class="tech-list">
+                            <li>Custom regex tokenization</li>
+                            <li>Font rendering (Type1/TrueType/Type0)</li>
+                            <li>Question detection systems</li>
+                            <li>Document structure analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Synthetic Data Generation</h3>
+                        <p>Generating synthetic training data for OCR models with ground-truth bounding boxes, mimicking real-world exam papers and documents.</p>
+                        <ul class="tech-list">
+                            <li>Synthetic exam generation</li>
+                            <li>Ground-truth bounding boxes</li>
+                            <li>Data augmentation pipelines</li>
+                            <li>Hugging Face Hub integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="expertise-details">
+                    <div class="details-card">
+                        <h4>🧠 AI Integration & Model Fine-tuning</h4>
+                        <p>Fine-tuning vision-language models using LoRA for efficient parameter optimization, with vLLM serving and Gemini API integration for intelligent document processing.</p>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Model Fine-tuning</span>
+                                <span class="detail-value">LoRA, vLLM, Hugging Face</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">AI APIs</span>
+                                <span class="detail-value">Gemini, DeepSeek, Custom models</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Performance</span>
+                                <span class="detail-value">GPU acceleration, Real-time processing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-card">
+                        <h4>🛠️ Production System Architecture</h4>
+                        <p>Building end-to-end document intelligence systems with Flask backends, React frontends, and automated deployment pipelines for scalable processing.</p>
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Backend</span>
+                                <span class="detail-value">Python, Flask, REST APIs</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Frontend</span>
+                                <span class="detail-value">React, TypeScript, Tailwind CSS</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">DevOps</span>
+                                <span class="detail-value">Docker, Shell scripting, GPU orchestration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expertise-applications">
+                    <h4>📚 Real-World Applications</h4>
+                    <div class="applications-grid">
+                        <div class="application-card">
+                            <h5>Educational Technology</h5>
+                            <p>Exam paper processing, automated question generation, tutoring platforms, and learning management systems.</p>
+                        </div>
+                        <div class="application-card">
+                            <h5>Document Automation</h5>
+                            <p>Intelligent document processing, form extraction, contract analysis, and archival digitization.</p>
+                        </div>
+                        <div class="application-card">
+                            <h5>Research & Development</h5>
+                            <p>OCR model development, synthetic data research, document intelligence algorithms, and open-source tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <div class="loading">Loading projects...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="95"></div>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="92"></div>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="75"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="95"></div>
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="82"></div>
+                            </div>
+                            <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="78"></div>
+                            </div>
+                            <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Android Studio</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kotlin</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="75"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React Native</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="70"></div>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="92"></div>
+                            </div>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Neovim</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="90"></div>
+                            </div>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="75"></div>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">OCR & AI Integration</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="80"></div>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DeepSeek OCR</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-level="85"></div>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        I'm always interested in new opportunities, collaborations,
+                        or just chatting about technology and development.
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://github.com/zakir0101" class="contact-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Zakir. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Widget -->
+    <div class="ai-chat-widget">
+        <div class="chat-toggle" id="chatToggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <h4>AI Assistant</h4>
+                <div class="chat-header-controls">
+                    <button class="voice-toggle" id="voiceToggle" title="Voice Control">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="close-chat" id="closeChat" title="Close Chat">×</button>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    Hi! I'm your AI assistant. Ask me about Zakir's projects, skills, or anything else!
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Ask me something or try voice commands...">
+                <button id="sendMessage">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
